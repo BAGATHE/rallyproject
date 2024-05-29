@@ -1,0 +1,8 @@
+D:\itu\LICENCE-2\Semestre4\rallye_cpp\x64\Debug\rallye_cpp.vcxproj.AssemblyReference.cache
+D:\itu\LICENCE-2\Semestre4\rallye_cpp\x64\Debug\rallyecpp.MyForm.resources
+D:\itu\LICENCE-2\Semestre4\rallye_cpp\x64\Debug\rallye_cpp.vcxproj.GenerateResource.cache
+D:\itu\LICENCE-2\Semestre4\rallye_cpp\x64\Debug\rallye_cpp.exe
+D:\itu\LICENCE-2\Semestre4\MrTahina\rallye_cpp\x64\Debug\rallye_cpp.vcxproj.AssemblyReference.cache
+D:\itu\LICENCE-2\Semestre4\MrTahina\rallye_cpp\x64\Debug\rallyecpp.MyForm.resources
+D:\itu\LICENCE-2\Semestre4\MrTahina\rallye_cpp\x64\Debug\rallye_cpp.vcxproj.GenerateResource.cache
+D:\itu\LICENCE-2\Semestre4\MrTahina\rallye_cpp\x64\Debug\rallye_cpp.exe

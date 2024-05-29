@@ -1,0 +1,105 @@
+  rallyecpp.MyForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly rallye_cpp, Version=0.0.*, Culture=Langue indifférente (Pays indifférent): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Model.Categorie: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getIdCategorie(): PrivateScope, Public, HideBySig
+    setIdCategorie(Int32): PrivateScope, Public, HideBySig
+    getIntituler(): PrivateScope, Public, HideBySig
+    setIntituler(String): PrivateScope, Public, HideBySig
+Class DataAccess.Connection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getConnection(): PrivateScope, Public, Static, HideBySig
+Class Model.Classement: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, System.String, System.String, System.String, System.String, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getIdRallye(): PrivateScope, Public, HideBySig
+    setIdRallye(Int32): PrivateScope, Public, HideBySig
+    getIdCategorie(): PrivateScope, Public, HideBySig
+    setIdCategorie(Int32): PrivateScope, Public, HideBySig
+    getIdPilote(): PrivateScope, Public, HideBySig
+    setIdPilote(Int32): PrivateScope, Public, HideBySig
+    getRallye(): PrivateScope, Public, HideBySig
+    setRallye(String): PrivateScope, Public, HideBySig
+    getPilote(): PrivateScope, Public, HideBySig
+    setPilote(String): PrivateScope, Public, HideBySig
+    getCategorie(): PrivateScope, Public, HideBySig
+    setCategorie(String): PrivateScope, Public, HideBySig
+    getTempsTotal(): PrivateScope, Public, HideBySig
+    setTempsTotal(String): PrivateScope, Public, HideBySig
+    getRank(): PrivateScope, Public, HideBySig
+    setRank(Int32): PrivateScope, Public, HideBySig
+    getPoints(): PrivateScope, Public, HideBySig
+    setPoints(Int32): PrivateScope, Public, HideBySig
+    getClassementGeneral(Int32): PrivateScope, Public, Static, HideBySig
+    getClassementParCategorie(Int32, Int32): PrivateScope, Public, Static, HideBySig
+Class Model.Pilote: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String, Model.Categorie): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getIdPilote(): PrivateScope, Public, HideBySig
+    setIdPilote(Int32): PrivateScope, Public, HideBySig
+    getNom(): PrivateScope, Public, HideBySig
+    setNom(String): PrivateScope, Public, HideBySig
+    getCategorie(): PrivateScope, Public, HideBySig
+    setCategorie(Categorie): PrivateScope, Public, HideBySig
+Class Model.Course: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32, Model.Pilote, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    getIdCourse(): PrivateScope, Public, HideBySig
+    setIdCourse(Int32): PrivateScope, Public, HideBySig
+    getIdSaison(): PrivateScope, Public, HideBySig
+    setIdSaison(Int32): PrivateScope, Public, HideBySig
+    getIdRallye(): PrivateScope, Public, HideBySig
+    setIdRallye(Int32): PrivateScope, Public, HideBySig
+    getIdSpecial(): PrivateScope, Public, HideBySig
+    setIdSpecial(Int32): PrivateScope, Public, HideBySig
+    getPilote(): PrivateScope, Public, HideBySig
+    setPilote(Pilote): PrivateScope, Public, HideBySig
+    getChronometre(): PrivateScope, Public, HideBySig
+    setChronometre(String): PrivateScope, Public, HideBySig
+    insert_course(Int32, Int32, Int32, Int32, String): PrivateScope, Public, Static, HideBySig
+Class Model.Special: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    addCourse(Course): PrivateScope, Public, HideBySig
+    getIdSpecial(): PrivateScope, Public, HideBySig
+    getIntituler(): PrivateScope, Public, HideBySig
+    getCourses(): PrivateScope, Public, HideBySig
+    getAllSpecials(): PrivateScope, Public, Static, HideBySig
+Class Model.Rallye: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    addSpecial(Special): PrivateScope, Public, HideBySig
+    getIdRallye(): PrivateScope, Public, HideBySig
+    getIntituler(): PrivateScope, Public, HideBySig
+    getSpecials(): PrivateScope, Public, HideBySig
+    getAllRallyes(): PrivateScope, Public, Static, HideBySig
+Class rallyecpp.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Model.Saison: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    addRallye(Rallye): PrivateScope, Public, HideBySig
+    getIdSaison(): PrivateScope, Public, HideBySig
+    getAnnee(): PrivateScope, Public, HideBySig
+    getRallyes(): PrivateScope, Public, HideBySig
+    getAllSaisons(): PrivateScope, Public, Static, HideBySig
